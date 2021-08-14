@@ -1,6 +1,6 @@
 # Project Title
 
-Source code related to blog post about creating custom parseable format styles in iOS 15 (and similar versions of tvOS, watchOS, and macOS). 
+Custom Parseable Format Styles
 
 ## Description
 
