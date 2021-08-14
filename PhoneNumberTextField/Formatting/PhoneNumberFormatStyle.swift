@@ -125,7 +125,7 @@ public extension PhoneNumber.PhoneNumberFormatStyle {
     
     /// Return just the phone number (e.g. 555-1212)
     /// - Returns: Format style
-    func phoneNumber() -> PhoneNumber.PhoneNumberFormatStyle {
+    func number() -> PhoneNumber.PhoneNumberFormatStyle {
         return getNewFormatStyle(for: .phoneNumber)
     }
     

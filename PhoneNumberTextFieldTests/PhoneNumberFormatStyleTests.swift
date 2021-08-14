@@ -62,7 +62,7 @@ class PhoneNumberFormatStyleTests: XCTestCase {
                 XCTFail("Could not parse phone number")
                 return
             }
-            let actual = input.formatted(.phoneNumber.areaCode().phoneNumber())
+            let actual = input.formatted(.phoneNumber.areaCode().number())
 
             // Then
             XCTAssertEqual(expected[i], actual)
@@ -93,7 +93,7 @@ class PhoneNumberFormatStyleTests: XCTestCase {
                 return
             }
             
-            let actual = input.formatted(.phoneNumber.areaCode().phoneNumber().space().hyphen())
+            let actual = input.formatted(.phoneNumber.areaCode().number().space().hyphen())
 
             // Then
             XCTAssertEqual(expected[i], actual)
@@ -124,7 +124,7 @@ class PhoneNumberFormatStyleTests: XCTestCase {
                 return
             }
             
-            let actual = input.formatted(.phoneNumber.phoneNumber().space().hyphen())
+            let actual = input.formatted(.phoneNumber.number().space().hyphen())
 
             // Then
             XCTAssertEqual(expected[i], actual)
