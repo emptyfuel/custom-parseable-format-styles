@@ -36,7 +36,7 @@ public struct PhoneNumberParseStrategy: ParseStrategy {
             }
         }
 
-        // Final output in XXXYYYZZZZ format
+        // Output the populated object
         return PhoneNumber(areaCode: areaCode, exchange: exchange, number: number)
     }
 
